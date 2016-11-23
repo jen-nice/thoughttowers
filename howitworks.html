@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Thought towers - How it works</title>
+  <meta name="description" content="How it works">
+  <meta name="author" content="">
+
+  <link href="https://fonts.googleapis.com/css?family=Courgette|Pacifico" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheets/main.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class ="jumbotron col-md-12" style="background-color:#e6e600; background-size: 100%; align:left;">
+    <center>
+  	<h1>HOW IT WORKS</h1>
+    <p>Welcome, get ready to get thinking!</p>
+   
+    <p> Scroll down and click on the 'Question Life' button to get started</p>
+    </center>
+  </div>
+
+  <div class="col-md-12" style="background-color:#e6e600;">
+    <center>
+    <div class="think">
+   
+    </div>
+    <button class="btn btn-default" onclick="question_function()">Question Life</button>
+    <h3 id="question_disp"></h3>
+    </center>
+  </div>	
+<!--<script src="javascripts/app.js"></script> -->
+
+<script>
+
+function question_function(){
+ //Random question generator
+  var questions = ['What motivates you to do what you do?',
+  'Is it possible to forgive and forget?',
+  'What does happiness look like to you?',
+  'What would you do differently than your parents?',
+  'Do you think life has a purpose?',
+  'What is the hardest lesson you have learnt?',
+  'What teacher in school made the most impact on you and why?',
+  'Who do you admire?',
+  'What age do you feel right now and why?',
+  'When have you felt your biggest adrenaline rush?',
+  'Describe your perfect date?',
+  'What kind of parent do you think you will be?',
+  'What is your favorite quote?',
+  'What gives you peace?',
+  'How do you keep a sense of perspective when life gets difficult?',
+  'Who are you becoming?',
+  'What were you doing when you last lost track of the time?',
+  'What can you do today that you couldn’t do a year ago?',
+  'What do you want most out of life?',
+  'What are you most afraid of?',
+  'What is your definition of love?',
+  'What have you given up on?',
+  'Are you the person you want to be?',
+  'What is the difference between living and being alive?',
+  'How much control do you have over your life?',
+  'What is beauty?',
+  'If you were living your true purpose what would you be doing?',
+  'Do you like who you are?',
+  'Are you afraid of being your true self around others?',
+  'What is one thing you are proud of?',
+  'Are you living a meaningful life?',
+  'What does success mean to you?',
+  'Are you satisfied with the depth of your relationships?',
+  'What do you like about yourself?',
+  'Are you having trouble of letting go of anything?',
+  'When did you last laugh so much it hurt?',
+  ]
+
+  var rand_question =  questions[Math.floor(Math.random() * questions.length)];
+  document.getElementById("question_disp").innerHTML = rand_question;
+ }
+
+</script>
+
+</body>
+</html>
