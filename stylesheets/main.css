@@ -1,0 +1,28 @@
+html {
+   background-color:#e6e600; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  font-family:Impact;
+  font-size: 100px; /*doesnt work for some reason? */
+}
+
+h2 {
+  font-family:Impact;
+  font-size: 100px;
+}
+
+.fpright {
+  font-family:Impact;
+  font-size: 10px;
+  padding-top: 300px;
+}
+
+.think {
+	font-size: 60px;
+
+}
